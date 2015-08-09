@@ -14,7 +14,7 @@ class RcRoot(Resource):
             return self
         return Resource.getChild(self, name, request)
 
-    def render_GET(self, request):
+    def render_POST(self, request):
         html = "<html>\n" \
                 "<head>\n<title></title>\n"\
                 "</head>" \
